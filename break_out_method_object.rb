@@ -56,3 +56,15 @@ class Brush
   end
 end
 
+# ---------------
+# step 2
+# If it's hard to initialize a brush in a test harness we can
+# proceed creating a fake that implements #draw_point interface.
+class BrushFake
+  def draw_point(x, y, color)
+    # pretend to be a brush drawing point
+  end
+end
+
+# At this point many other refactoring techniques could be applied
+# in order to improve the design of the code...
